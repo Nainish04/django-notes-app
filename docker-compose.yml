@@ -39,8 +39,8 @@ services:
     image: mysql
     container_name: "db_cont"
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=test_db
+      - MYSQL_ROOT_PASSWORD=base
+      - MYSQL_DATABASE=practice_db
     volumes:
       - ./data/mysql/db:/var/lib/mysql
     healthcheck:
